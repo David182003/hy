@@ -6,7 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<Style>
+    div{
+        height: 100px;
+        width: 200px;
+    }
+</Style>
 <body>
-    <h1>hola</h1>
+    <div></div>
+    <input type="color" onchange="bgChange(this.value)">
 </body>
+<script>
+    box = document.querySelector("div");
+        function bgChange(color){
+            box.Style.background = color;
+
+        }
+</script>
 </html>
